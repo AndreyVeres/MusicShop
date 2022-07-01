@@ -240,10 +240,149 @@ body {
 
 .brands__list {
     display: grid;
-    grid-template-columns: repeat(6 , 1fr);
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
 }
+
 .brands__img {
     max-width: 150px;
-    fill: red;
+  
+}
+
+.catalog {
+    padding: 80px 0 80px;
+    background-image: url(../images/catalog-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.catalog__box {
+    display: flex;
+}
+
+.catalog__item {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 2px 2px 5px black ;
+    text-align: center;
+    width: 100%;
+    border-radius: 7px;
+    background-color: rgba(251, 250, 250, 0);
+}
+
+.catalog__item+.catalog__item {
+    margin-left: 50px;
+}
+
+.catalog__item-img {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.catalog__item::before {
+    content: '';
+    width: 90%;
+    margin: 0 auto;
+    height: 350px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border: 2px solid black;
+    box-shadow: 1px 1px 4px black , -1px -1px 4px black;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.catalog__item-title {
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.catalog__item-buy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.catalog__btn {
+    font-size: 25px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.catalog__box{
+    margin-bottom: 45px;
+}
+
+.show__more {
+    padding: 15px 10px;
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.reviews {
+    padding: 80px 0 80px;
+
+}
+.reviews__box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.reviews__item-avatar {
+    margin: 0 auto 20px;
+
+}
+
+.reviews__item-name {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.reviews__item-name::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: red;
+    text-align: center;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+
+.reviews__item-name::after {
+    content: '';
+    width: 12px;
+    height: 10px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    position: absolute;
+    transform: skew(38deg, 132deg);
+    bottom: -13px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.reviews__item {
+ margin-bottom: 100px;
+    max-width: 260px;
+   text-align: center;
 }
