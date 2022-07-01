@@ -1,0 +1,249 @@
+.container {
+    margin: 0 auto;
+    max-width: 1450px;
+    padding: 0 10px;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.title span {
+    display: block;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.header {
+    background-image: url(/images/asian.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 120vh;
+}
+
+.header__top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo__img {
+    margin-right: 100px;
+    width: 370px;
+}
+
+.contacts {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.header__title {
+    font-size: 67px;
+    margin: 50px 0 100px;
+    max-width: 700px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #332219;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff;
+}
+
+.header__text {
+    max-width: 750px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.red__btn {
+    padding: 10px 40px;
+    background-color: #d52003;
+    font-size: 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all .8s;
+    border: 0;
+    color: #fff;
+}
+
+.red__btn:hover {
+    background-color: transparent;
+    box-shadow: 4px 2px 6px rgb(210, 8, 8), -1px -1px 1px rgb(255, 255, 255);
+    color: #332219;
+}
+
+.whyChooseUs {
+    background-color: #efefef;
+    padding: 70px 0 80px;
+}
+
+.benefits__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.benefits__item {
+    padding: 34px 0 58px;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    position: relative;
+    max-width: 230px;
+    height: 390px;
+
+}
+
+.benefits__item::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #808080;
+    top: -6px;
+    left: 0;
+}
+
+.benefits__item::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #808080;
+    bottom: -6px;
+    left: 0;
+}
+
+.benefits__title {
+    padding: 30px 0 50px;
+}
+
+.benefits__text {}
+
+.benefits__img {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.instruments {
+    padding: 80px 0 80px;
+    position: relative;
+    color: #000;
+
+}
+
+.instruments::before {
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    background-image: url(../images/instrumental-bg.jpg);
+    filter: blur(5px);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.instruments__title {
+    color: #fff;
+
+}
+
+.slider__box {
+    position: relative;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/instrumental-slider-fonjpg.png);
+    background-position: center center;
+    padding: 35px;
+
+}
+
+.arrows {
+    cursor: pointer;
+}
+
+.arrow__right {
+    top: calc(50% - 50px);
+    right: 18%;
+    position: absolute;
+}
+
+.arrow__left {
+    top: calc(50% - 50px);
+    left: 18%;
+    position: absolute;
+}
+
+.slider__title {
+    font-size: 45px;
+}
+
+.slider__descr {
+    max-width: 600px;
+    padding: 10px;
+}
+
+
+.slider__buy {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.slider__price {
+    font-size: 45px;
+    margin-right: 50px;
+}
+
+
+.brands {
+    padding: 80px 0 80px;
+    background-image: url(../images/brands-bg.jpg);
+}
+
+.brands__title {
+    background-image: url(../images/brands-logo-bg.png);
+    background-size: contain;
+    background-position: top center;
+    max-width: 500px;
+    margin: 0 auto 60px;
+}
+
+.brands__list {
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    align-items: center;
+}
+.brands__img {
+    max-width: 150px;
+    fill: red;
+}
