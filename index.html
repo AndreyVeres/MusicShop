@@ -93,11 +93,9 @@
 
             <h2 class="title instruments__title">отличные инструменты <span>для любого стиля</span></h2>
             <div class="slider__box">
-                <div class="arrows">
-                    <img class="arrow__left" src="images/arrow__left.png" alt="arrow">
-                    <img class="arrow__right" src="images/arrow__right.png" alt="arrow">
-                </div>
+
                 <div class="slider__item">
+
                     <h5 class="slider__title">bali 4 string II</h5>
                     <img class="slider__image" src="images/slider-item-1.png" alt="instrument">
                     <p class="slider__descr">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quia
@@ -105,6 +103,11 @@
                     <div class="slider__buy">
                         <div class="slider__price">1000$</div>
                         <button class="red__btn">купить</button>
+                    </div>
+
+                    <div class="arrows">
+                        <img class="arrow__left" src="images/arrow__left.png" alt="arrow">
+                        <img class="arrow__right" src="images/arrow__right.png" alt="arrow">
                     </div>
                 </div>
             </div>
@@ -185,40 +188,116 @@
                 <div class="reviews__item">
                     <img class="reviews__item-avatar" src="images/avatar.png" alt="avatar">
                     <p class="reviews__item-name">Дмитрий</p>
-                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum?</p>
+                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                        earum?</p>
                 </div>
                 <div class="reviews__item">
                     <img class="reviews__item-avatar" src="images/avatar.png" alt="avatar">
                     <p class="reviews__item-name">Дмитрий</p>
-                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum?</p>
+                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                        earum?</p>
                 </div>
                 <div class="reviews__item">
                     <img class="reviews__item-avatar" src="images/avatar.png" alt="avatar">
                     <p class="reviews__item-name">Дмитрий</p>
-                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum?</p>
+                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                        earum?</p>
                 </div>
                 <div class="reviews__item">
                     <img class="reviews__item-avatar" src="images/avatar.png" alt="avatar">
                     <p class="reviews__item-name">Дмитрий</p>
-                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum?</p>
+                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                        earum?</p>
                 </div>
                 <div class="reviews__item">
                     <img class="reviews__item-avatar" src="images/avatar.png" alt="avatar">
                     <p class="reviews__item-name">Дмитрий</p>
-                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum?</p>
+                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                        earum?</p>
                 </div>
                 <div class="reviews__item">
                     <img class="reviews__item-avatar" src="images/avatar.png" alt="avatar">
                     <p class="reviews__item-name">Дмитрий</p>
-                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum?</p>
+                    <p class="reviews__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                        earum?</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="how__order">
+    <!-- ORDER -->
+    <section class="order">
         <div class="container">
-            <img src="./images/lines.svg" alt="">
+            <h2 class="title">как сделать заказ</h2>
+        </div>
+        <img src="../images/lines.svg" alt="">
+
+    </section>
+
+    <!-- FORM -->
+
+    <section class="makeOrder">
+    
+
+        <div class="container">
+
+
+            <h2 class="title form__title">форма заказа</h2>
+            <form class="form">
+                <div class="gift__box">
+                    <img class="gift__image" src="images/gift.svg" alt="image">
+                    <p class="form__text">
+                        Сделав заказ по телефону или заполнив форму прямо сейчас вы получите подарок
+                    </p>
+                    <a class="gift__phone" href="tel:888999345">888999345</a>
+                </div>
+
+                <div class="form__item">
+                    <select class="category select" name="category" id="category">
+                        <option disabled selected>Выберите категорию</option>
+                        <option value="electro">electro guitar</option>
+                        <option value="acoustic">acoustic guitar</option>
+                        <option value="bass">bass guitar</option>
+                        <option value="drums">drums</option>
+                        <option value="keyboards">keyboards</option>
+                        <option value="brass">brass</option>
+                    </select>
+
+                </div>
+
+                <div class="form__item">
+                    <select class="model select" name="model" id="model">
+                        <option disabled selected>Модель</option>
+                        <option value="Cort CR50 BK" data-category ="electro">Cort CR50 BK</option>
+                        <option value="Fender Squier Bullet" data-category ="electro">Fender Squier Bullet</option>
+                        <option value="Ibanez GIO GSA60 Black Night" data-category ="electro">Ibanez GIO GSA60 Black Night</option>
+                        <option value="Randon RGI-01" data-category ="acoustic">Randon RGI-01</option>
+                        <option value="Epiphone Thunderbird-IV" data-category ="bass">Epiphone Thunderbird-IV</option>
+                        <option value="Jay Turser JTB-402-TSB" data-category ="bass">Jay Turser JTB-402-TSB</option>
+                        <option value="Fender Deluxe Active Jazz Bass Surf Pearl" data-category ="bass">Fender Deluxe Active Jazz Bass Surf Pearl</option>
+                        <option value="Alesis Surge Mesh Kit" data-category ="drums">Alesis Surge Mesh Kit</option>
+                        <option value="Samick SIG50D/EBHP"data-category ="keyboards">Samick SIG50D/EBHP</option>
+                        <option value="Jupiter JTS500A"data-category ="brass">Jupiter JTS500A</option>
+                        <option value="Jupiter JBC1000N" data-category ="brass">Jupiter JBC1000N</option>
+                        <option value="Nux DM-5S" data-category ="drums">Nux DM-5S</option>
+                    </select>
+                </div>
+
+                <div class="form__item">
+        
+                    <input type="text" name="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form__item">
+                   
+                    
+                    <input type="tel" name="phone" placeholder="Введите телефон">
+                </div>
+
+                <p class="form__price-place">1000$</p>
+
+                <button class="red__btn form__btn" type="submit">Сделать заказ</button>
+
+            </form>
         </div>
     </section>
     <script src="js/main.js"></script>
