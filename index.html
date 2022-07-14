@@ -140,7 +140,7 @@
     <!-- CATALOG -->
     <section class="catalog">
         <div class="container">
-            <h2 class="title">Каталог товаров</h2>
+            <h2 class="title catalog__title">Каталог товаров</h2>
             <div class="catalog__box">
                 <div class="catalog__item">
                     <img class="catalog__item-img" src="images/catalog-item.png" alt="img">
@@ -224,12 +224,44 @@
             </div>
         </div>
     </section>
+
     <!-- ORDER -->
     <section class="order">
         <div class="container">
-            <h2 class="title">как сделать заказ</h2>
+            <h2 class="title order__title">как сделать заказ</h2>
         </div>
-        <img src="../images/lines.svg" alt="">
+        <img class="order__img" src="../images/lines.svg" alt="lines">
+
+        <ul class="order__steps">
+
+            <li class="order__step order-1">
+                <img class="order__step-img " src="/images/orderIcons/1.png" alt="img">
+                <p class="order__step-stage">Выбираете инструмент</p>
+            </li>
+
+            <li class="order__step order-2">
+                <img class="order__step-img " src="/images/orderIcons/2.png" alt="img">
+                <p class="order__step-stage">Оплачиваете любым удобным способом</p>
+            </li>
+
+            <li class="order__step order-3">
+                <img class="order__step-img " src="/images/orderIcons/3.png" alt="img">
+                <p class="order__step-stage">Наш специалист связывается с вами для уточнения деталей</p>
+            </li>
+
+            <li class="order__step order-4">
+                <img class="order__step-img " src="/images/orderIcons/4.png" alt="img">
+                <p class="order__step-stage">вы получаете заказ в любом отделении почты</p>
+            </li>
+
+            <li class="order__step order-5">
+                <img class="order__step-img " src="/images/orderIcons/5.png" alt="img">
+                <p class="order__step-stage">Мы бережно упаковываем и отправляем инструменты по вашему адресу</p>
+            </li>
+
+        </ul>
+
+  
 
     </section>
 
@@ -287,7 +319,7 @@
                     <input type="text" name="name" placeholder="Введите имя">
                 </div>
 
-                <div class="form__item">
+                <div class="f__item">
                    
                     
                     <input type="tel" name="phone" placeholder="Введите телефон">

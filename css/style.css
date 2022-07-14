@@ -171,10 +171,16 @@ section {
 }
 
 .instruments__title,
-.form__title {
+.form__title,
+.catalog__title {
     color: #fff;
     z-index: 5;
     position: relative;
+}
+
+.catalog__title ,
+.order__title {
+    color: red;
 }
 
 .slider__box {
@@ -188,7 +194,8 @@ section {
     justify-content: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../images/instrumental-slider-fonjpg.png);
+    /* background-image: url(../images/instrumental-slider-fonjpg.png); */
+    background-image: url(../images/slider-item-test.png);
     background-position: center center;
     padding: 35px;
 
@@ -276,7 +283,6 @@ section {
     text-align: center;
     width: 100%;
     border-radius: 7px;
-    background-color: rgba(251, 250, 250, 0);
 }
 
 .catalog__item+.catalog__item {
@@ -396,7 +402,55 @@ section {
 .order {
     background-image: url(../images/brick-bg.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    position: relative;
+    min-height: 100vh;
+    color: #fff;
+}
+
+
+.order__img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.order__step-img {
+    width: 160px;
+}
+
+.order__step-stage {
+    max-width: 200px;
+}
+
+.order-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.order-2 {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+.order-3 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+
+.order-4 {
+    position: absolute;
+    left: 32%;
+    top: 60%;
+}
+
+.order-5 {
+    position: absolute;
+    left: 57%;
+    top: 60%;
 }
 
 .makeOrder {
@@ -414,8 +468,6 @@ section {
     position: absolute;
     opacity: 1;
 }
-
-
 
 .form {
     background-image: url(../images/form.png);
@@ -450,7 +502,6 @@ section {
 
 .select {
     border-radius: 5px;
-   
     padding: 5px;
     width: 260px;
     height: 40px;
