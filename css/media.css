@@ -1,0 +1,195 @@
+@media (max-width : 1440px){
+    .catalog__box {
+        
+    }
+}
+
+
+@media (max-width : 1200px) {
+    .slider__image {
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width : 1024px) {
+    .header__title {
+        font-size: 50px;
+    }
+
+    .header__text {
+        max-width: 600px;
+    }
+
+    .benefits__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .benefits__item:nth-child(-n+2) {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+
+    .brands__list {
+        grid-template-columns: repeat(4 , 1fr);
+    }
+
+
+}
+
+@media (max-width : 850px) {
+    .header__title {
+        font-size: 40px;
+    }
+
+    .logo__img {
+        margin-right: 0;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 30px 0 30px;
+    }
+
+    .slider__btn {
+        font-size: 15px;
+        padding: 0px 15px;
+
+    }
+
+    .slider__title {
+        font-size: 35px;
+    }
+
+    .slider__price {
+        font-size: 30px;
+    }
+
+    .slider__descr {
+        max-width: 450px;
+    }
+
+    .brands__list {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    .reviews__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width : 650px) {
+    .header {
+        background-image: url(../images/asian-mini.jpg);
+        background-position: right center;
+    }
+
+    .slider__price {
+        font-size: 25px;
+    }
+
+    .slider__descr {
+        padding: 4px;
+    }
+
+    .arrow__right {
+        top: -50px;
+        right: calc(50% - 100px);
+    }
+
+    .arrow__left {
+        top: -50px;
+        left: calc(50% - 100px);
+    }
+
+    .slider__title {
+        font-size: 28px;
+    }
+
+    .title span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width : 520px) {
+    .header__title {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .catalog__item {
+        /* width: 80%; */
+    }
+
+    .header__text {
+        font-size: 14px;
+    }
+
+    .phone__link,
+    .skype__link {
+        font-size: 16px;
+    }
+
+    .contacts__img {
+        width: 30px;
+    }
+
+    .header__top {
+        justify-content: space-between;
+    }
+
+    .red__btn {
+        font-size: 16px;
+    }
+
+    .benefits__title {
+        font-size: 18px;
+    }
+
+    .benefits__item {
+        font-size: 12px;
+        max-width: 200px;
+        height: 350px;
+    }
+
+    .brands__list {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .reviews__box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width : 450px) {
+    .header__top {
+        flex-direction: column;
+    }
+
+    .phone__link,
+    .skype__link {
+        justify-content: flex-end;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .benefits__list {
+        grid-template-columns: 1fr;
+    }
+}
