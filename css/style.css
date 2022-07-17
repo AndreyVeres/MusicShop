@@ -24,6 +24,7 @@ section {
 .phone__link {
     margin-bottom: 10px;
 }
+
 .skype__link,
 .phone__link {
     font-size: 20px;
@@ -276,15 +277,17 @@ section {
     max-width: 500px;
     margin: 0 auto 60px;
 }
+
 .lud {
     width: 150px;
 }
+
 .brands__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
     justify-items: center;
-  
+
 }
 
 .brands__img {
@@ -437,59 +440,71 @@ section {
 }
 
 
-.order__img {
-    margin: 0 auto;
-    width: 100%;
-    padding-bottom: 100px;
+.order__steps {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ 
 }
 
-.order__box {
-    background-image: url(../images/linesTest.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
+.order__step {
+    width: 33%;
     position: relative;
+    text-align: center;
+   
 }
 
-.order__step-img {
-    width: 160px;
-}
 
-.order__step-stage {
-    max-width: 200px;
-}
-
-.order-1 {
-    position: absolute;
-    left: 20%;
-}
-
-.order-2 {
-    position: absolute;
-    left: 45%;
-}
-
-.order-3 {
-    position: absolute;
-    left: 70%;
-}
-
+.order-5,
 .order-4 {
-    position: absolute;
-    left: 32%;
-
-    bottom: -80px;
+    margin-top: 100px;
 }
 
-.order-5 {
-    position: absolute;
-    left: 57%;
-    bottom: -128px;
+
+.order__step img {
+    min-width: 100px;
+    min-height: 100px;
+    margin: 0 auto;
 }
+
+.order__step:nth-child(-n+2)::before ,
+.order-3::before ,
+.order-5::before
+{
+    content: '';
+    position: absolute;
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    height: 55%;
+    width: 30%;
+}
+
+.order__step:nth-child(-n+2)::before{
+    right: -15%;
+    top: 10%;
+    transform: rotate(180deg);
+}
+
+.order-3::before { 
+    bottom: -70px;
+    left: 80px;
+    transform: rotate(300deg);
+}
+
+.order-5::before{
+    top: 10%;
+    left: -25%;
+    transform: rotate(0deg);
+}
+
 
 .makeOrder {
     background-image: url(../images/form-bg.png);
     position: relative;
+}
+
+.order__step-stage {
+    padding: 0 50px;
 }
 
 .makeOrder::before {
@@ -556,7 +571,7 @@ input {
 
 .form__price-place {
     padding: 15px 0;
-    font-size: 45px;
+    font-size: 30px;
 }
 
 
@@ -566,7 +581,7 @@ input {
 
 
 .footer {
-    background-color: #000;
+    background-color: #fff;
 
 }
 
@@ -576,6 +591,7 @@ input {
     align-items: center;
 
 }
+
 .footer__contacts {
     display: flex;
     justify-content: space-between;

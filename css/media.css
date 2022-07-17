@@ -1,7 +1,5 @@
-@media (max-width : 1440px){
-    .catalog__box {
-        
-    }
+@media (max-width : 1440px) {
+    .catalog__box {}
 }
 
 
@@ -37,7 +35,7 @@
 
 
     .brands__list {
-        grid-template-columns: repeat(4 , 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
 
@@ -79,13 +77,41 @@
     }
 
     .brands__list {
-        grid-template-columns: repeat(3 , 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .reviews__box {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .order-3::before {
+        bottom: -100px;
+        left: 55px;
+    }
+
+
+    .order__step:nth-child(-n+2)::before,
+    .order-3::before,
+    .order-5::before {
+        display: none;
+    }
+
+    .order__step {
+        width: 50%;
+        margin: 0;
+    }
+
+    .order-1,
+    .order-2 {
+        margin-bottom: 100px;
+    }
+
+    .order-4 {
+        order: 1;
+    }
+
 }
+
 
 
 @media (max-width : 650px) {
@@ -119,6 +145,10 @@
     .title span {
         font-size: 30px;
     }
+
+    .order__step::before {}
+
+
 }
 
 @media (max-width : 520px) {
@@ -166,12 +196,23 @@
     }
 
     .brands__list {
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .reviews__box {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .order__steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order__step {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 
 }
 
@@ -191,5 +232,17 @@
 
     .benefits__list {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width : 375px) {
+    .form__price-place {
+        padding: 0;
+        font-size: 24px;
+    }
+
+    .form {
+        background-size: contain;
+        width: 300px;
     }
 }
