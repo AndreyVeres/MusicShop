@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Merriweather', serif;
+    overflow-x: hidden;
 }
 
 section {
@@ -31,13 +32,12 @@ section {
     color: #fff;
     text-shadow: 2px 2px black;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .contacts__img {
-    width: 50px;
+    margin-right: 10px;
 }
 
 .title span {
@@ -234,9 +234,21 @@ section {
     margin-bottom: 10px;
 }
 
-.arrows img {
+.arrows svg {
     cursor: pointer;
+    fill: #fff;
+    transition: transform .5s;
+    opacity: 0.3;
 }
+
+.arrows svg:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+
+
 
 
 
@@ -583,19 +595,22 @@ input {
 
 
 .footer {
-    background-color: #fff;
-
+    background-color: black;
+    padding: 10px 0;
 }
 
 .footer__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer__contacts {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
+
+}
+
+.footer__contacts svg {
+    fill: #fff;
 }
