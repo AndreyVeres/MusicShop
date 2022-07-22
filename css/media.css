@@ -4,9 +4,7 @@
 
 
 @media (max-width : 1200px) {
-    .slider__image {
-        max-width: 50%;
-    }
+
 }
 
 
@@ -214,6 +212,18 @@
     }
 
 
+    .slider__title {
+        font-size: 20px;
+    }
+
+    .slider__descr {
+        font-size: 12px;
+    }
+
+    .slider__image {
+        width: 80%;
+    }
+
 }
 
 @media (max-width : 450px) {
@@ -232,6 +242,11 @@
 
     .benefits__list {
         grid-template-columns: 1fr;
+    }
+
+    
+    .slider__title {
+        font-size: 15px;
     }
 }
 
