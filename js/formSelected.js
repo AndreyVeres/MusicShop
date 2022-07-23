@@ -4,9 +4,15 @@ const formSelected = () => {
     const categoryInput = document.getElementById('category')
     const modelInput = document.getElementById('model')
 
-    categoryInput.addEventListener('change' ,()=> {
-        modelInput[0].selected = 'selected'
+    modelInput.addEventListener('change', () => {
+        const index = modelInput.selectedIndex;
+        const price = modelInput.querySelectorAll('option')[index].dataset.price;
+        document.querySelector('.form__price-place').textContent = `${price} $ `
+
+        // const test = document.querySelector('.form__price-place').textContent = modelInput.querySelectorAll('option')[modelInput.selectedIndex].dataset.price;
+        // console.log(test)
     })
+
     function sortModels() {
         modelInput.querySelectorAll('option').forEach(item => {
             item.style.display = 'none'
@@ -22,6 +28,11 @@ const formSelected = () => {
             }
         })
     }
+
     form.addEventListener('change', sortModels)
+    categoryInput.addEventListener('change', () => {
+        modelInput[0].selected = 'selected'
+        document.querySelector('.form__price-place').textContent = 0 + " $"
+    })
 };
 export default formSelected;

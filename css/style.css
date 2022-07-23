@@ -558,6 +558,10 @@ section {
     margin-bottom: 12px;
 }
 
+.gift__phone {
+    color: black;
+}
+
 .form__item {
     font-size: 15px;
     margin-bottom: 10px;
@@ -614,3 +618,7 @@ input {
 .footer__contacts svg {
     fill: #fff;
 }
+
+
+
+

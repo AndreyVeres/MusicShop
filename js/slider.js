@@ -1,14 +1,14 @@
-const slider = () => {
-    const slides = document.querySelectorAll('.slider__item');
-    const arrowLeft = document.querySelector('.arrow__left')
-    const arrowRight = document.querySelector('.arrow__right');
+const slider = (slidesSelector , prevArrow , nextArrow) => {
+    const slides = document.querySelectorAll(slidesSelector);
+    const arrowLeft = document.querySelector(prevArrow)
+    const arrowRight = document.querySelector(nextArrow);
     let sliderIndex = 0;
+    
     function hideSlides() {
         slides.forEach(item => {
             item.style.display = 'none'
         })
     }
-
     function showSlide(sliderIndex) {
         slides[sliderIndex].style.display = 'flex'
     }
