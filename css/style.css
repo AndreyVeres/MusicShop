@@ -47,7 +47,7 @@ section {
 }
 
 .header {
-    background-image: url(/images/asian.jpg);
+    background-image: url(../images/asian.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
